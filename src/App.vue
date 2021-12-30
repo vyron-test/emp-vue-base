@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld />
+    <CompositionApi />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from './components/HelloWorld.vue'
+import CompositionApi from './components/compositionApi.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     HelloWorld,
-  },
-};
+    CompositionApi
+  }
+}
 </script>
 
 <style>

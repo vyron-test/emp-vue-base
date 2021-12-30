@@ -13,6 +13,9 @@ module.exports = defineConfig({
         exposes: {
             "./App": "./src/App.vue",
             "./HelloWorld": "./src/components/HelloWorld.vue"
+        },
+        remotes: {
+            "@microProject": "microProject@http://localhost:8000/emp.js"
         }
     },
     webpackChain(config) {
